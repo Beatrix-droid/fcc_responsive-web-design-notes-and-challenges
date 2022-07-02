@@ -1,0 +1,71 @@
+body{
+  background-image: url("https://buidln.clipdealer.com/001/124/926/previews/6--1124926-Background%20of%20binary%20code%20numbers.jpg");
+background-repeat: no-repeat;
+  }
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.body{
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+h1, p, legend{
+text-align: center;
+}
+
+h1{
+  color:rgb(255, 255, 255);
+  font-family: Impact;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.Title{
+  width: 300px;
+  padding: 5px;
+  background-color: rgb( 	0, 0, 90.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.button{
+  border-radius:20px;
+  background-color: rgb(255,153,102);
+   margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:rgb(102,204,225);
+}
+
+hr{
+  border-color:rgb(102,204,225);
+  background-color:rgb(102,204,225);
+  height:2px;
+}
+
+.survey-dscrpt{
+  padding-top: 25px;
+  padding-bottom:10px;
+}
+
+legend{
+  padding-top: 28px;
+  padding-bottom:px;
+}

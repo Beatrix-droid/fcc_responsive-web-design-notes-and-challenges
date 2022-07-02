@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<div class="body">
+<body>
+<section>
+  <div class="Title">
+<h1 id="title" > Free Code Camp's Survey Form</h1>
+</div>
+<div class="survey-dscrpt">
+  <p id="description">This survey form is my first project for Free Code Camp's responsive web design certification</p>
+    </div>
+<hr></hr>
+</section>
+
+<form id="survey-form">
+<legend>Please enter your details:</legend>
+<fieldset>
+<ul>
+ <li> <input id="name" type="text" required placeholder="name"></input><label id="name-label"> Your name</label></li>
+
+<!---insert html validators --->
+
+<li><input id="email" type="email" required placeholder="email"></input><label id="email-label"> Your email address</label></li>
+<li><input id="number" type="number" min="000000000" max="999999999" required placeholder="number"></input><label id="number-label"> Your phone number</label></li>
+
+</ul>
+</fieldset>
+<!---insert dropdown select element --->
+<legend>Would you like Free Code Camp to send you emails with its latest news and updates?</legend>
+<fieldset>
+<input type="radio" value="no" name="yes-no">No</input>
+<input type="radio" value="yes" name="yes-no">Yes</input>
+</fieldset>
+
+<legend>Which of these Languages would you like Free Code Camp to cover in the future?</legend>
+<fieldset>
+ <ul>
+  <li><input type="checkbox" value="ruby">Ruby</input> </li>
+ <li> <input type="checkbox" value="julia">Julia</input></li>
+  <li><input type="checkbox" value="golang">Golang</input></li>
+    <li><input type="checkbox" value="lua">Lua</input></li>
+  <li><input type="checkbox" value="c++">C++</input></li>
+</ul>
+  </fieldset>
+<button id="submit" class="button">Submit form!</button>
+</form>
+</body>
+</div>
+ <div class="footer">
+ <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+    <div>
+  </html>
