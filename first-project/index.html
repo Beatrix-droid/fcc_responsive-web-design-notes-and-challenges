@@ -7,6 +7,7 @@
     <title>Survey Form</title>
     <link href="styles.css" rel="stylesheet"/>
   </head>
+  <div class="container">
 <div class="body">
 <body>
 <section>
@@ -14,23 +15,35 @@
 <h1 id="title" > Free Code Camp's Survey Form</h1>
 </div>
 <div class="survey-dscrpt">
-  <p id="description">This survey form is my first project for Free Code Camp's responsive web design certification</p>
+  <p id="description">This survey form is my first project for Free Code Camp's responsive web design certification<p>
     </div>
-<hr></hr>
+<hr>
 </section>
 
+<div class="form_container">
 <form id="survey-form">
-<legend>Please enter your details:</legend>
+<div class="start-form">
+<legend class="first-legend">Please enter your details:</legend>
+</div>
 <fieldset>
-<ul>
- <li> <input id="name" type="text" required placeholder="name"></input><label id="name-label"> Your name</label></li>
+<label id="name-label">Your name:  <input id="name" type="text" required placeholder="name"/></label>
 
 <!---insert html validators --->
 
-<li><input id="email" type="email" required placeholder="email"></input><label id="email-label"> Your email address</label></li>
-<li><input id="number" type="number" min="000000000" max="999999999" required placeholder="number"></input><label id="number-label"> Your phone number</label></li>
 
-</ul>
+
+<label id="email-label"> Your email address: <input id="email" type="email" required placeholder="email"/></label>
+<label id="number-label">Give us a rating (10 being the highest grade): <input id="number" type="number" min="1" max="10" required placeholder="number"/></label>
+   <label>How did you hear about us?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+  </fieldset>
 </fieldset>
 <!---insert dropdown select element --->
 <legend>Would you like Free Code Camp to send you emails with its latest news and updates?</legend>
@@ -48,9 +61,11 @@
     <li><input type="checkbox" value="lua">Lua</input></li>
   <li><input type="checkbox" value="c++">C++</input></li>
 </ul>
-  </fieldset>
+</fieldset>
+
 <button id="submit" class="button">Submit form!</button>
 </form>
+</div>
 </body>
 </div>
  <div class="footer">
@@ -60,4 +75,5 @@
       </p>
     </footer>
     <div>
+      </div>
   </html>
