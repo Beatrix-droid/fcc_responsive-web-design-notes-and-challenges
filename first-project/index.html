@@ -26,8 +26,6 @@
 </div>
 <fieldset>
 <label id="name-label">Your name:  <input id="name" type="text" required placeholder="name"/></label>
-
-
 <label id="email-label"> Your email address: <input id="email" type="email" required placeholder="email"/></label>
 <label id="number-label">Give us a rating (10 being the highest grade): <input id="number" type="number" min="1" max="10" required placeholder="number"/></label>
    <label>How did you hear about us?
@@ -44,19 +42,21 @@
 
 <legend>Would you like Free Code Camp to send you emails with its latest news and updates?</legend>
 <fieldset>
-<label><input type="radio" value="no" name="yes-no"/>No</label>
-<label><input type="radio" value="yes" name="yes-no"/>Yes</label>
+<label><input type="radio" value="no" name="yes-no" class="inline"/>No</label>
+<label><input type="radio" value="yes" name="yes-no" class="inline"/>Yes</label>
 </fieldset>
 
 <legend>Which of these Languages would you like Free Code Camp to cover in the future?</legend>
 <fieldset>
+
  <ul>
-  <li><input type="checkbox" class="checkbox" value="ruby">Ruby</input> </li>
- <li> <input type="checkbox" value="julia" class="checkbox">Julia</input></li>
-  <li><input type="checkbox" value="golang" class="checkbox">Golang</input></li>
-    <li><input type="checkbox" value="lua">Lua</input></li>
-  <li><input type="checkbox" value="c++">C++</input></li>
+  <li><input type="checkbox" class="checkbox inline" value="ruby">  Ruby</input> </li>
+ <li> <input type="checkbox" value="julia" class="checkbox inline"> Julia</input></li>
+  <li><input type="checkbox" value="golang" class="checkbox inline"> Golang</input></li>
+    <li><input type="checkbox" value="lua" class="checkbox inline"> Lua</input></li>
+  <li><input type="checkbox" value="c++" class="checkbox inline">   C++</input></li>
 </ul>
+
 
 <label class="feedback">Any feedback you have for Free Code Camp:
           <textarea name="feedback" rows="3" cols="30" placeholder="The features I would like FCC to implement in the future are..."></textarea>

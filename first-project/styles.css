@@ -45,15 +45,15 @@ h1{
 }
 
 
+
 ul {
     list-style-type: none;
     color: white;
-    text-align:center;
     display: inline;
+    text-align: center;
 }
 .checkbox{
   display:inline;
-
 }
 
 .Title{
@@ -107,7 +107,7 @@ hr{
 
 legend{
   padding-top: 28px;
-  padding-bottom:30px;
+  padding-bottom:20px;
   color: white;
   text-align: center;
   font-size: 20px;
@@ -126,15 +126,25 @@ fieldset:not(:last-of-type) {
 label{
   display: block;
   text-align: center;
+  padding-bottom: 1em;
+
+}
+
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+
 }
 
 input,
 textarea,
 select {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0 0;
 	width: 100%;
   min-height: 2em;
   color: rgb(0, 0, 90.2);
+
 }
 
 input[type="submit"]{
@@ -143,10 +153,11 @@ input[type="submit"]{
   margin:auto;
   color: white;
   font-size: 1rem;
+  display: block;
 }
 
 .start-form{
-  width:60%;
+  width:100%;
   margin: 0 auto;
   background-color: rgb(255,153,102);
   border-radius: 7px;
