@@ -73,6 +73,7 @@ footer {
    width:100%;
    height:50px;   /* Height of the footer */
    background:rgb(102,204,225);
+   color: rgb(0, 0, 90.2);
 }
 
 hr{
@@ -114,7 +115,6 @@ border: none;
 fieldset:not(:last-of-type) {
   border-bottom: 3px solid rgb(102,204,225);
   color: white;
-
 }
 
 label{
@@ -125,15 +125,24 @@ label{
 input,
 textarea,
 select {
-  margin: 10px 0 0 0;
+  margin: 10px 0 20px 0;
 	width: 100%;
   min-height: 2em;
+  color: rgb(0, 0, 90.2);
+}
+
+input[type="submit"]{
+  background-color:  rgb(255,153,102);
+  border: none;
+  margin:auto;
+  color: white;
+  font-size: 1rem;
 }
 
 .start-form{
   width:60%;
   margin: 0 auto;
   background-color: rgb(255,153,102);
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 2px;
 }
