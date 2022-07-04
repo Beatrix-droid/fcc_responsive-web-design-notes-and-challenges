@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,14 +27,11 @@
 <fieldset>
 <label id="name-label">Your name:  <input id="name" type="text" required placeholder="name"/></label>
 
-<!---insert html validators --->
-
-
 
 <label id="email-label"> Your email address: <input id="email" type="email" required placeholder="email"/></label>
 <label id="number-label">Give us a rating (10 being the highest grade): <input id="number" type="number" min="1" max="10" required placeholder="number"/></label>
    <label>How did you hear about us?
-          <select name="referrer">
+          <select name="referrer" id="dropdown">
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
             <option value="2">freeCodeCamp YouTube Channel</option>
@@ -45,25 +41,29 @@
         </label>
   </fieldset>
 </fieldset>
-<!---insert dropdown select element --->
+
 <legend>Would you like Free Code Camp to send you emails with its latest news and updates?</legend>
 <fieldset>
-<input type="radio" value="no" name="yes-no">No</input>
-<input type="radio" value="yes" name="yes-no">Yes</input>
+<label><input type="radio" value="no" name="yes-no"/>No</label>
+<label><input type="radio" value="yes" name="yes-no"/>Yes</label>
 </fieldset>
 
 <legend>Which of these Languages would you like Free Code Camp to cover in the future?</legend>
 <fieldset>
  <ul>
-  <li><input type="checkbox" value="ruby">Ruby</input> </li>
- <li> <input type="checkbox" value="julia">Julia</input></li>
-  <li><input type="checkbox" value="golang">Golang</input></li>
+  <li><input type="checkbox" class="checkbox" value="ruby">Ruby</input> </li>
+ <li> <input type="checkbox" value="julia" class="checkbox">Julia</input></li>
+  <li><input type="checkbox" value="golang" class="checkbox">Golang</input></li>
     <li><input type="checkbox" value="lua">Lua</input></li>
   <li><input type="checkbox" value="c++">C++</input></li>
 </ul>
+
+<label class="feedback">Any feedback you have for Free Code Camp:
+          <textarea name="feedback" rows="3" cols="30" placeholder="The features I would like FCC to implement in the future are..."></textarea>
+			  </label>
 </fieldset>
  <div class="button">
-<input vaule="submit" type="submit"/>
+<input vaule="submit" id="submit" type="submit"/>
 </div>
 </form>
 </div>

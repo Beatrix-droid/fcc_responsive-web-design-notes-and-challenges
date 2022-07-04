@@ -30,7 +30,9 @@ form{
   margin: 0 auto;
   margin-bottom: 2em;
   border-radius: 10px;
-
+}
+.feedback{
+  color: white;
 }
 
 h1, p, legend{
@@ -46,7 +48,11 @@ h1{
 ul {
     list-style-type: none;
     color: white;
-    text-align: center;
+    text-align:center;
+    display: inline;
+}
+.checkbox{
+  display:inline;
 
 }
 
@@ -145,4 +151,8 @@ input[type="submit"]{
   background-color: rgb(255,153,102);
   border-radius: 7px;
   padding: 2px;
+}
+
+.feedback{
+  margin-top: 2em;
 }
