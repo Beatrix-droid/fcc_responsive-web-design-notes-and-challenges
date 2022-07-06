@@ -1,7 +1,12 @@
+
+/*Normalize your box model by creating a *
+selector and setting the box-sizing property to border-box.*/
+
 * {
   box-sizing: border-box;
 }
 
+/**/
 body {
   margin: 0;
   font-family: Arial;
@@ -14,22 +19,51 @@ body {
   background: #E0DDDD;
 }
 
+
+/*
+Flexbox is a one-dimensional CSS layout approach that focuses on
+the flow of content. It offers the ability to control the way items
+are spaced and aligned within a container.
+
+To set an element to use Flexbox, you give it a display property set
+to flex. Create a #gallery selector and give it that property.
+*/
+
 #gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: flex;            /*Flexbox can be thought of as having two axes, the main*/
+  flex-direction: row;      /*axis and the cross axis. The main axis is determined by*/
+  flex-wrap: wrap;          /*the flex-direction property. If flex-direction is set to */
+  justify-content: center;  /*row or row-reverse, the main axis is horizontal. If flex-direction */
+  align-items: center;      /*is set to column or column-reverse, the main axis is vertical.*/
   padding: 0 4px;
 }
+  /*The flex-wrap property determines how your items should behave when
+  the flex container is too small. Setting this property to wrap will
+  allow your items to wrap to the next row/column (depending on your main
+  axis), where nowrap will prevent your items from wrapping. When this is
+  set to nowrap, items may either shrink to fit or overflow.*/
+
+  /* The justify-content property determines how the items inside a flex
+   container are positioned along the main axis, affecting their position
+   and the space around them. Give your #gallery selector a justify-content
+   property set to center.*/
+
+   /*The align-items property positions the flex content along the cross axis.
+    In this case, with your flex-direction set to row, your cross axis would
+    be vertical. To vertically center your images, give your #gallery selector
+    an align-items property set to center.*/
+
+
+
+
 
 #gallery img {
-  width: 25%;
-  height: 300px;
-  object-fit: cover;
-  margin-top: 8px;
-  padding: 0 4px;
-  border-radius: 10px;
+  width: 25%;          /*Rather than setting each aspect ratio individually,*/
+  height: 300px;       /*you can use the object-fit property to determine how */
+  object-fit: cover;   /*images should behave.Give your #gallery img selector*/
+  margin-top: 8px;     /*the object-fit property and set it to cover. This will*/
+  padding: 0 4px;      /* tell the image to fill the img container while maintaining */
+  border-radius: 10px; /* aspect ratio, resulting in cropping to fit.*/
 }
 
 @media (max-width: 800px) {
